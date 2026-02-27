@@ -1,0 +1,108 @@
+﻿---
+ID: "b59d11e4-f238-4a54-8737-f570329b2ae9"
+Parent: "3a271c8f-b172-45a4-9eea-3b40cf0eabe8"
+Template: "2f814f03-c3ef-4229-854c-cbced6d24704"
+Path: "/sitecore/content/industry-verticals/baptist-health/Home/Doctors/David Vassilakis"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 125
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{59833A4A-9529-4ABA-8586-2F46A13039E4}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "ff44024d-9770-44a5-bd33-5146f9670cbb"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T112122Z
+    - ID: "3ac1a186-26b7-4845-9048-443c0dd0e487"
+      Hint: Bio
+      Value: "<p>Dr. David Vassilakis is a highly skilled neurosurgeon recognized for his expertise in complex brain and spine procedures. He is committed to combining advanced surgical techniques with a patient-centered approach, ensuring every individual receives care tailored to their unique needs. Known for his precision in the operating room, Dr. Vassilakis also places great emphasis on communication, guiding patients and families with clarity and compassion throughout the treatment journey. His dedication extends beyond clinical practice, as he actively engages in research and education aimed at advancing neurosurgical methods and improving patient outcomes. By blending innovation with empathy, Dr. Vassilakis remains devoted to enhancing quality of life and providing the highest standard of neurological care.</p>"
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: David Vassilakis
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\movin.tilakaratne@sitecore.com
+    - ID: "58a94784-3297-4c4a-a2b4-e4f87d015f50"
+      Hint: JobTitle
+      Value: Neurosurgeon
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\movin.tilakaratne@sitecore.com
+    - ID: "65d340d2-4eb3-4593-9bdd-9a66c4dcfab7"
+      Hint: FullName
+      Value: David Vassilakis
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a7dd816f-ea60-4b3b-8994-dfa6965c1956"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260225T153319Z
+    - ID: "ea706e77-5d62-426e-bbb3-68805298e75c"
+      Hint: Photo
+      Value: |
+        <Image src="https://starter-verticals-v2.sitecoresandbox.cloud/api/public/content/78923-HomePageHero-2000x800?v=76c301a4" dam-id="aqWtD1TxTO6RspQ8prP7kA" width="2000" height="800" alt="DavidVassilakis.jpg" dam-content-type="Image" thumbnailsrc="https://starter-verticals-v2.sitecoresandbox.cloud/api/gateway/78923/thumbnail" />
+    - ID: "fb359b0f-3087-41f2-aae3-2dd492eb2c60"
+      Hint: Title
+      Value: David Vassilakis
+- Language: "es-PR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251114T112122Z
+    - ID: "3ac1a186-26b7-4845-9048-443c0dd0e487"
+      Hint: Bio
+      Value: <p>El Dr. David Vassilakis es un neurocirujano altamente capacitado, reconocido por su experiencia en procedimientos complejos de cerebro y columna vertebral. Está comprometido a combinar técnicas quirúrgicas avanzadas con un enfoque centrado en el paciente, asegurando que cada individuo reciba atención adaptada a sus necesidades únicas. Conocido por su precisión en el quirófano, el Dr. Vassilakis también pone gran énfasis en la comunicación, guiando a los pacientes y sus familias con claridad y compasión a lo largo del proceso de tratamiento. Su dedicación se extiende más allá de la práctica clínica, ya que participa activamente en la investigación y educación destinadas a avanzar en los métodos neuroquirúrgicos y mejorar los resultados de los pacientes. Al combinar innovación con empatía, el Dr. Vassilakis sigue dedicado a mejorar la calidad de vida y a proporcionar el más alto estándar de atención neurológica.</p>
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: David Vassilakis
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\movin.tilakaratne@sitecore.com
+    - ID: "58a94784-3297-4c4a-a2b4-e4f87d015f50"
+      Hint: JobTitle
+      Value: Neurocirujano
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\movin.tilakaratne@sitecore.com
+    - ID: "65d340d2-4eb3-4593-9bdd-9a66c4dcfab7"
+      Hint: FullName
+      Value: David Vassilakis
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9bd378f5-7a51-4cee-997f-4930aad60810"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yuri.yampolsky@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260226T060917Z
+    - ID: "ea706e77-5d62-426e-bbb3-68805298e75c"
+      Hint: Photo
+      Value: |
+        <Image src="https://starter-verticals-v2.sitecoresandbox.cloud/api/public/content/78923-HomePageHero-2000x800?v=76c301a4" dam-id="aqWtD1TxTO6RspQ8prP7kA" width="2000" height="800" alt="DavidVassilakis.jpg" dam-content-type="Image" thumbnailsrc="https://starter-verticals-v2.sitecoresandbox.cloud/api/gateway/78923/thumbnail" />
+    - ID: "fb359b0f-3087-41f2-aae3-2dd492eb2c60"
+      Hint: Title
+      Value: David Vassilakis

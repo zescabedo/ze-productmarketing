@@ -1,0 +1,63 @@
+﻿---
+ID: "2b6d476a-eb35-4d49-bc13-846050387c14"
+Parent: "bec9372d-5f7b-496c-aa53-a17d573e65da"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/industry-verticals/baptist-health/Baptist-Health-Logo-White"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/2B6D476AEB354D49BC13846050387C14.ashx?h=16&thn=1&w=16"
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 270
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "905f6fb8-9a27-4caf-bf29-5410a0198be6"
+  Value: iVBORw0KGgoAAAANSUhEUgAAAQ4AAAAvCAYAAAASNiSCAAAPo0lEQVR4AeycC5qrOA6FoTfWt1ZW1Svre1eWOb/GcmRjCJBQgWr3Z8W2XpaOjXjUnfnrdtH/hv5fR6Aj8DYE/kor/1b/z0WIWBVqbx2BjsC7EPDC8Wccx68rkID6I+qtI9AReCMCXjgODUFvQ7+gQxfpzjsCJ0HgvxDGoYWDYiH6V0BCnxp/adxbR6AjcHEEDiscKhIUC2jQKxDtQz+9cFz8wPTwOwIg8FThoDgkUmftS7+/cCyyj60qFh/wRMj+Ve+NuetKvbeOQEfgKgg8VTgoCkrUCoR62qd+KA58aP0tOcWBpwyePJBRKNC3pw/J+19IBNh/qfVcfwYCuwqHHhkoAIYAF7+IQjGKQVFQN/A9Q2o3LxjwKBKTgiGl7AulTh2BjsD5EVhdOHSBfyW6KS2eKjS1Znzx+JbB04UXD1heFP5RcaFo/JYFf2HBHoq+mCNzG+w7dQQ6AidEYHXh0IXPUwUUnyxIiVcQnjAoIL/QEzMWD4qGyVQ0eAKBKA6QVAd/ErHCInvmQ/+vI9ARuCOga8duquq5Od8FT4zka7fP1YUjxqeLe66A8NSAjOQoALloyN4LhobW+AYiV6MVDOMc8CNwKFrEtYbQdfLCdkBUbZfv5Cac1Flj/94ZzmRtRcW+rNlDdCZ7J3v4a+gUuStev6gtZgHC9QNxo9Z0e1vw+fdWb7sKhy8yjiMgx6cLRPb0oQF8Xk3QIWGxcqOgfOTZ8QP+tSnEgVoiNsWJDRPWNw4sNsdH+aYVlCT5kbdHwB7C8/nb+3TW2EOI2FpEnJwtblqMI2EHtezgoYu8ZYvsHcR1Q2zQK9bHz0t8PlU4yCRtKEWCqZMdQsnYBBu7QD0b+6X+W5pisCcgei1IPOqKRjwS/79JQi6QhtaInyLybTHbqi/8UWE4RfFLcezGUTtkeylo5vbxQzotmX1/k4y1mzcsybDFf9Nea35rUzz2RK5FN8cjnDmvFAmZ35t8kt8ozmafsina04UDbwSkvg6GuxYbJdG9Jd0742Qj4oMUViwemtpfiib5ILgAUfwmB2kpbmFQ7+eS+hbZ5sfiLc536h6V685wCjOeggrG0kRFg32GltSelr2kcBCFDhoVW11uzK3CZY4G6O6hF9m0NqF5aBQqRaKWnfHQL0Kjg0QeizrKlTwplBDj5l150ck6IQVsneay1up9rN2kXGv2mefsx5b41hSNFn5b1hheUjg4nJHqCKKMcS2/0Nw+WF0o3tWh6oKiyEMU/K2H9eE6F9/3h/mdSOFVxXkxpacLRzoQBOtkC8IXefXjIHK3RsfkF/l5ujK/M0/hz9PGWTA/Sxzv3JJD1077fega7vzpwsGdSs54xFU38KHRP8RxUPhIw12MDz08/nI3M7mS5OsuNj+SlJ89ndDvSXDObo5fryG93UVDtl7wa7d5jo5TZmoAT11uzEU/Zq+Vi+1rTnDDwG2932D6UFU+t+/3glf5W8xzd+GQYwoAwQ5ePFJPOBQNeih/JJWcJw/j6YfAzF7jszaekorYQg4Fn4kwoVBC9i9ixeOCsblkGS/xJ01yw0O96UuB3vARDxlz86s5jbnJpZubBKYrRtwDTe3jLjZOuTgkG7PT2NbAoCbJap06P+a2ruvKB7y8lubuw+OY5CCd0zXlQ7yOjY0TbzF+6Xi+2VbJgYn74FxEfCRe3+Qfe/wZ7sGS6441nB6uIV+TWMWjTXLcXTgUIIFacBp78Ri0CovUQaKLmpO/AmBf67rOW/uZPPzJqohNuga4mOQCoWdPWOIxVjeAwad0wYd5JvH8UKGDfZShz8Eo+FJg3vLX0pW6NWwyaV3i9rWX7MxYP67DDYD8yA2SaKhj93WQ1eQy+klxrpXfOQ8YESt5Q54zvE/psEeTMBPfMUMOZk74gQduXNz4Yr6a5B8b7OlrO3iRankxly9yiLFGOTkiy7xdhSMt4k44fARoc92RCcBBMZ5+AMuKimz9n6XDQ4/EpXKeRoyKpo7LXsPEbzXyh5DxWuavZzYWkzzVWWMTwMgm/Agz/rbuhxGWEzFA2COnd5n3+PO1KeC4w1+tS/wmSz8Wo5z4Pmg434RJjln2vHJabhrDx0dhDF9EHMQdZdghcprYRuV3jlPO+YJRwOQN1TmzB/DqcNk754E/uTvVeW8uHooHX+pGcPZ1vCfOMfxXnwfXo+f8ECs6xAXV+1Zc57sKh1ZiEXXWDBBAhuAo2LhwlkuGHQDZoa30JH5PU9wGSuo5KJAHA5jk0DoYrkNePvanKZ/T15swucsKC/yzFvqROAAQmEVco05cP/IfjrUua9bxtex8DfQL+QYfhd2LJ3EPF8er1p0qFRilnCMWjo9ZcpZssPwT7Zc1j5dyxiCKEdQ6jznHvYXDQbQLKoGE01x5BSwLEwjvYF7RPP2o927wKBKRiNXjBEDLwRkz/dYc4hozLo0NvoXvhGvBk6ZdKOoPaWl/3Xcz9pm43OY7es5f3Mel8cN4lDPnF5+uW2MO368DxjxRN7FBmPBhGKm+ycT1ot7RY875w/xiELsKByCIaICLv5gwRYFN47HZg4ly9M9ExMgBgBjH2LggdYZuFL+vKIhjAeFPAmuKjJnK6ewhM4XlH2KtNZ7xV/tanCt2Wms9LgRo0f4gIXu3ljaHoD3G9yO7fM6TPvsEcT4e2V5Bnvd8c+HgxIjyRZTG2WHKvpgLRIArgBfPfGAvKvSTj+/quKvzGgBx4fO+yGZDHgMHgoJoMTsz9uQjKnJEnnLDnulLKK1TrzV5/XnJYnKS1tOoaPbKGTnSA8NZjKLuAWP2kf17SCvXLvDUPpJvQfKzuK+Oh/p6r/zppFhD/i7TNheOlFkGQqBwUOJFhgqFAnDynVp68FyPscmlDPhsyDuLh8K4N8XqF4DH68LF4uFKOmQ8qZCT/8XiNLl5jDv6OxZ3Y/BQujfOwJ37M0Zr94xrwWk2c4HEmeB6+BHnYlPhIHkhQ2W3/7m85nZguNDgi2hZrglFgcMV9bgjmH2Sq7O2dqNM+Tt+Ul4cirgc+UxiFRYcjPpQYEuRbF100eee8be+EiQs5vIAE0HwIwuI7w3nmrO7SK7svUCxc6E5r+9cD5ydI8+Fljq+bSocOjx8RKFqkjwgcGAAhO8Z3KWlMka5ZxD1AA0+9vSXJx0OCiM4gAv5kKMfMMYQ/CPp8EKizSXPueJBbuyzY8D8kqT9fEkO8gNeS+fikvgQ9KbCgUEiwEjDgYoqjG4R7E8Xhr4+2NyJv+OCCiHsGtZx4yTnqsQ5HDFfiitF4wq5kcsmoniI/DtQyzaejZb89Dzl9/TeNc6FP7E87fsMAG4uHAIkXzQhAS6WDIiApyjEOxNyLjD7riEfPJ3Acz3GJg8+rzKMRWMYhiHm/Z05ZPxfvaj261ftU3vMfpErVIhb+oXCNSf1Ps9mofzBptBPeM3aXE2wuXAIAA5ofVhsDmAQIEgP8IyvufVJBqA80iIfKj2pnq61vnyDAUWwdUGZ7EVZtNZ211HG3eyV6/oa3vNUOXmSYO8gKdn+qv9JrcYTDCb7HRPW+eYbV0un9hXNLjneXDgETvwn4yRth1Z8CoEXBTtk6VDZY3uQYwPF4nFKYFPMk4OgvGbjlc1EX8m2eGI/1bb6jIWGosd+bQlg9sIRHlt8FXHP4LUlrqN0W8WQ891cT3lw5rk2OBsF1k2D9cwCr/Vmd03FNrt3d61to82FQ+7tgtdh4fVCXfNjKIEq3psDKbPhlWDibw+tjkHBs2Gtg8Lr1dLahY38cFEVvCXjSgaOxFGwk0/nUbhZw+eLvWzxySF/qNdQeGiHjQ4FFw9DKI6ZW9FKcRD3Kp9m+IIf1l3jJuVQxw52cnHjDwAQc54ybvLJPnmxqb+LofclHWty4PO958L8PPgx36wlPTAmPg1f0/YUDsD5TAF5FK2gONAZeG3ExzAM2LoNcgNTvgDe+Uf2vxrOC55i8U0F7FqdmGNOeRwUsZebmx8oNnBOD51i/eDHh4X8drsxxydy/EKMa2od3puUyIuCbthrTsMn/UPS+pOYxYv2cY/n/BE/cdCv0a/9YLeGV+swj7Eyh9izFn8uNtaHyMHtOBuOaWtPuGYE1Q0bCHvWjkQcX1JCHvnFWHJfM/LrNfHl+81N3mPDZu0NtLUO9rv/rwMJJAeqokBQEWTk8Li7cNBsHPQKuSKJtpq+rgGyaGkzfEOldnOg603lUCj80fKoopuL3UHHtvWUwhp/5DTjWPllioz4DEMFyIGCTCZbew1k0iBsG2xj5XiST2IxQfjxNT0PFzFHBn0l+xhTgZFiJA7I7WMPNoV+FMax1uFC8PWiyMcuR4cYnW+97OETZytXdDyfHA+xi0YJ5+KXyFqRh2zQh0xY/RAbMvYAqsQD8f2jeMlnLl6LtTKcO4dca7ZO8EkM0Zy1wMdyD3rEEvW4nk1v8xNHAsWC1AI4IQm/g1mA0rEeuVYlyE+NAWGQjL+oFHJ40juqsT6+uQMT9xoiPiPFRjNAcVKThMjwyWFwMWOICxs5fHTooVoGr0UeMz13CXJxW+Jr2RhPcaHHmvTw6CFioucQ4A/f6LWI/TJdOeDi4CJCDx62HCx65sibMSkW+NjJjTX0icOxMebKn8V48aH18M+wpiVbj29iK38ev+vgFz2omUewQQd9iDH6EBc0c/fJGDIZyqKleCW+N62HLb7oEdDXe8Jezfl0G3poSW/fEwdBqhCw6X5wKB4UBMDgcHEoXU4QEFVNZjeCR07PxUCyyA8hxUpcW4k8jNYEldZgwzW0xhhi88yFuMSgzlohM4WZH2ljB2Gj6Uif/c6YGXscx9ruQ7xsy1iEzizhyHXCGD9i58ac/UalSdJkDXXW0M9xNA0qpqzYD3w8pMrUprJ/aJd0mnElGT40tEYOUFOfRaWFPjoaWmNc6IuLjroRGWTycRwf5ssaw3D/lQ2+8KHhSF/syTiOyJdo9dqbnzjuYU5GPFVQDCaCwKAC8s/NeUIBmA+SCfI+7Ah0BC6AwO7CkS54q1ApTysKacwjLtUuPk0gh4eKPaEw6NQR6AhcD4HdhYNUVTz83Y+nBysKehehKOTvGdKjeBRy8fJc4946Ah2BiyHwVOEgVxUP3pkoIHy3oHjwuuLfM5BBLkfGk4fNse/UETgOge75KASeLhwxsFRERvEoDFB8leH1hSeNgifd3u4IUFjvs2Hg43Gc93FH4BQIvLRweEYqIFYg6J3X+3kE9Hpnf9ZuaPDkhgyqi0pDvbM6At+DgBeOv3V4OaSnp++B5S2rLP7dvBfht+xJX3QGAS8c3M34oHkF4t+OzKRzTbaKAt+BFun1mXWPHYH9CFA4+BZxRdqfdbfsCHQEnkLgfwAAAP//x/wfzQAAAAZJREFUAwBnGMXrg/NO5wAAAABJRU5ErkJggg==
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 4078
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 270 x 47
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0f60ce47-ec1e-4d1f-951a-dffe80689c8d"
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 47
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260226T185153Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "Baptist-Health-Logo-White"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d9032103-66cc-477b-adbf-fbed708bc69e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260226T185154Z

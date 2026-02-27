@@ -1,0 +1,336 @@
+﻿---
+ID: "2ea3127f-37b6-44af-a4aa-022d27dda9a5"
+Parent: "4802fe3d-ff35-4586-979c-f1a8d0ea0cb9"
+Template: "98e60957-0783-4a9a-85cc-77dad30e9711"
+Path: "/sitecore/content/industry-verticals/baptist-health/Home"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{98E60957-0783-4A9A-85CC-77DAD30E9711}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: "-100"
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{5158A902-720D-4346-A17E-AE16F3452E45}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "bf67d460-428f-4648-8013-1a02118245d6"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{980DD050-C05D-4588-A3E8-9D8E232C31D2}"
+          p:before="*"
+          s:ds="79F695FA-3D28-4036-9837-011C2A220547"
+          s:id="{E3CCF1D0-7855-4898-8BDE-77F83C6A487C}"
+          s:par="FieldNames=%7B2A140B31-5CC4-4FB8-9473-E5AFB1B35ACE%7D&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D"
+          s:ph="/headless-main/promo-content-3" />
+        <r
+          uid="{99C56D3B-BE42-4BFC-9005-2FC96679B891}"
+          p:after="r[@uid='{980DD050-C05D-4588-A3E8-9D8E232C31D2}']"
+          s:ds="3A271C8F-B172-45A4-9EEA-3B40CF0EABE8"
+          s:id="{810E5B86-932A-4160-8672-C126B545F034}"
+          s:par="FieldNames=%7B9FC6C8FA-1AC1-43D5-8101-3406E72CA062%7D&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;DynamicPlaceholderId=5"
+          s:ph="/headless-main/content-section-content-4" />
+        <r
+          uid="{C84E205E-3C04-4D5C-A623-5990755BD957}"
+          p:after="r[@uid='{99C56D3B-BE42-4BFC-9005-2FC96679B891}']"
+          s:ds="3BAEE826-D0E8-4C1C-941D-1D1D83B56141"
+          s:id="{B49CF2D7-7CB2-4918-8F38-2607D956D995}"
+          s:par="FieldNames&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;DynamicPlaceholderId=1"
+          s:ph="headless-main" />
+        <r
+          uid="{DE1E100D-B512-4CFD-AE11-7845CF84498B}"
+          p:after="r[@uid='{C84E205E-3C04-4D5C-A623-5990755BD957}']"
+          s:ds="E17E6567-56A0-4517-98AE-23B069765F75"
+          s:id="{E3CCF1D0-7855-4898-8BDE-77F83C6A487C}"
+          s:par="FieldNames=%7BACAE8592-E847-4AD7-920B-E210A1B027AE%7D&amp;RenderingIdentifier&amp;Styles=%7C%7B46800F5D-4AC8-4E82-9E9D-0EA3CA71AD1B%7D&amp;CSSStyles&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D"
+          s:ph="headless-main" />
+        <r
+          uid="{C4A911F3-2693-437D-B6F9-8BD82E701896}"
+          p:after="r[@uid='{DE1E100D-B512-4CFD-AE11-7845CF84498B}']"
+          s:ds="D5BCDE6A-B4F2-4C2B-B624-B6D893894EFE"
+          s:id="{CCD11802-22A3-462F-92FC-821515E2AEC8}"
+          s:par="FieldNames=%7B110BA852-4F32-4E05-937C-117CF0DFFD66%7D&amp;RenderingIdentifier&amp;Styles=%7C%7B23084C5B-E073-4F9E-9889-71B473F53847%7D%7C%7BAE4D448C-B0C0-4A4B-A613-C4FFE406CD1E%7D%7C%7BB3008EE1-3567-4267-93F9-2E8908A48938%7D&amp;CSSStyles&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;DynamicPlaceholderId=2&amp;CurvedTop&amp;CurvedBottom"
+          s:ph="headless-main" />
+        <r
+          uid="{5EF00023-5C1C-4DBF-87D1-4A1AA8A7CEE8}"
+          p:after="r[@uid='{C4A911F3-2693-437D-B6F9-8BD82E701896}']"
+          s:ds="52DB9982-2DBD-4BC0-A0B1-DD72844458C3"
+          s:id="{CCD11802-22A3-462F-92FC-821515E2AEC8}"
+          s:par="FieldNames=%7BF7DAC04A-8F85-4A5A-876E-645711711783%7D&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;DynamicPlaceholderId=3&amp;CurvedTop&amp;CurvedBottom"
+          s:ph="headless-main" />
+        <r
+          uid="{CE910DEB-15CF-4681-BB79-BBDD8900D9D3}"
+          p:after="r[@uid='{5EF00023-5C1C-4DBF-87D1-4A1AA8A7CEE8}']"
+          s:ds="4CEF875F-51D5-498F-B9B1-5EA770A69D8F"
+          s:id="{442E3EA4-DE9A-41B5-A917-0F589F79B1A0}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=7"
+          s:ph="headless-main" />
+        <r
+          uid="{A5C61CBF-AA2F-4977-8E8D-28C744FCD6AE}"
+          p:after="r[@uid='{CE910DEB-15CF-4681-BB79-BBDD8900D9D3}']"
+          s:ds="94EA6C42-AC0F-4F9F-A4CE-D68EBDF8229D"
+          s:id="{89252C77-218A-4B21-8A74-BC8A4BF11D93}"
+          s:par="FieldNames&amp;RenderingIdentifier&amp;Styles&amp;CSSStyles&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;DynamicPlaceholderId=6"
+          s:ph="headless-main" />
+        <r
+          uid="{AF8C0D11-049C-4277-8792-DDBE49F407C8}"
+          p:after="*[1=2]"
+          s:ds="3A271C8F-B172-45A4-9EEA-3B40CF0EABE8"
+          s:id="{810E5B86-932A-4160-8672-C126B545F034}"
+          s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7B9FC6C8FA-1AC1-43D5-8101-3406E72CA062%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=8"
+          s:ph="/headless-main/section-wrapper-content-7" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{99C56D3B-BE42-4BFC-9005-2FC96679B891}">
+              <p:d />
+            </r>
+            <r
+              uid="{9B910CC2-09D7-4786-84AB-72A04DF498B4}"
+              p:after="r[@uid='{980DD050-C05D-4588-A3E8-9D8E232C31D2}']"
+              s:ds="local:/Data/Image 2"
+              s:id="{AB2EDBA0-3960-4F12-B765-579DC231894A}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BC928CE36-B9CE-485E-BDB3-34BB7768F78A%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=9"
+              s:ph="headless-main" />
+            <r
+              uid="{C84E205E-3C04-4D5C-A623-5990755BD957}">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{875E7E36-E0C8-4DC9-9564-D4ADF0224A8B}"
+                    s:name="871e36cb7dc341a7a03d44ecf5b5a330">
+                    <conditions>
+                      <condition
+                        uid="02ADAABEE0054FF896B8BDCA73BAB1A3"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="871e36cb7dc341a7a03d44ecf5b5a330" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{A6B6E046-995C-4850-8512-4C0618BF9396}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="b4be10f6-58a5-420d-9da8-a46bda1ef2db" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="F7433D3377A3435A8D6CC3DC5227D309"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{DE1E100D-B512-4CFD-AE11-7845CF84498B}">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{6C8AC881-9002-4951-A802-13DD8D9ACBFD}"
+                    s:name="871e36cb7dc341a7a03d44ecf5b5a330">
+                    <conditions>
+                      <condition
+                        uid="1706DB6A8283490A9EDDC4A74F6A682E"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="871e36cb7dc341a7a03d44ecf5b5a330" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{2D1C0BC5-F397-4DA4-9177-BB526BF7AD16}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="774b0be5-87ba-4fb5-8052-ac31456faa27" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="3A9FAB91242F43F1AC927E295FAEF4DA"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{BBA1775F-E874-4C8B-B63A-E41132449694}"
+              p:after="r[@uid='{DE1E100D-B512-4CFD-AE11-7845CF84498B}']"
+              s:ds="3a271c8f-b172-45a4-9eea-3b40cf0eabe8"
+              s:id="{810E5B86-932A-4160-8672-C126B545F034}"
+              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BFEE1B216-C224-464B-B104-D9AC7DC752E5%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=11"
+              s:ph="headless-main">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{5FE4EED9-3FC1-47C7-801A-17FD0E7C4BBC}"
+                    s:name="871e36cb7dc341a7a03d44ecf5b5a330">
+                    <conditions>
+                      <condition
+                        uid="A48D116644924CB2BD82BD87B4AA619F"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="871e36cb7dc341a7a03d44ecf5b5a330" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{99AFEB25-9DA0-4C02-94D4-6881E402D44C}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="78c1edaf-05b4-4ced-876c-1baa3fa9cafe" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="989FB0397D15418BBDB0B22EE8EB7F71"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
+            <r
+              uid="{CE910DEB-15CF-4681-BB79-BBDD8900D9D3}">
+              <p:d />
+            </r>
+            <r
+              uid="{A5C61CBF-AA2F-4977-8E8D-28C744FCD6AE}">
+              <p:d />
+            </r>
+            <r
+              uid="{AF8C0D11-049C-4277-8792-DDBE49F407C8}">
+              <p:d />
+            </r>
+          </d>
+        </r>
+    - ID: "13fe722e-a8c7-4432-a983-23fb28ffab05"
+      Hint: metadataKeywords
+      Value: "Baptist Health South Florida, South Florida healthcare services, hospitals & urgent care, expert doctors Miami, cancer care, heart & vascular care, primary care, virtual medical appointments, patient resources, medical services Coral Gables, PineApp healthcare app, compassionate patient-centered care, advanced treatments, outpatient clinics, urgent care Miami, schedule appointment online"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T112239Z
+    - ID: "32c603c2-c858-4138-8fcb-8e18a5ad8240"
+      Hint: metadataTitle
+      Value: Expert Healthcare Services in South Florida | Baptist Health – Trusted Hospitals & Clinics
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: FIND A DOCTOR
+    - ID: "4ff91248-33ab-4254-b6f7-2618fd0aebae"
+      Hint: Title
+      Value: Home
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\movin.tilakaratne@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\movin.tilakaratne@sitecore.com
+    - ID: "6b43d550-6d5f-46ce-ac84-3d9493c45bc6"
+      Hint: metadataDescription
+      Value: "Baptist Health South Florida offers world-class medical care with 12 hospitals, advanced treatments in cancer, heart, brain & orthopedic care, urgent and primary care, virtual appointments, and compassionate patient-centered support across Miami-Dade, Broward, Palm Beach, and Monroe counties. Schedule care, find a doctor, access patient resources and manage health online."
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1d624713-c69c-4c7f-93de-8b2d9ed0ae40"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\amy.iannaccone@sitecore.com
+    - ID: "d3886445-9ee0-46a0-ae5e-8857dd6b395f"
+      Hint: pageSummary
+      Value: "Baptist Health South Florida is a leading not-for-profit healthcare network serving communities throughout South Florida. The home page highlights easy access to care — from virtual and urgent care options to specialist appointments and patient resources — backed by expert physicians, advanced medical technology, and a deep commitment to compassionate, personalized health services. With a comprehensive network of hospitals, outpatient centers and digital tools like the PineApp for 24/7 access to care, the organization promotes whole-person health and trusted care close to home."
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260227T185715Z
+- Language: "es-PR"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{99C56D3B-BE42-4BFC-9005-2FC96679B891}">
+              <p:d />
+            </r>
+            <r
+              uid="{CE910DEB-15CF-4681-BB79-BBDD8900D9D3}">
+              <p:d />
+            </r>
+            <r
+              uid="{A5C61CBF-AA2F-4977-8E8D-28C744FCD6AE}">
+              <p:d />
+            </r>
+            <r
+              uid="{AF8C0D11-049C-4277-8792-DDBE49F407C8}">
+              <p:d />
+            </r>
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20251112T112239Z
+    - ID: "4e0720e9-9d50-4ddc-87cf-ecd65e8e94c8"
+      Hint: NavigationTitle
+      Value: ENCUENTRA UN MÉDICO
+    - ID: "4ff91248-33ab-4254-b6f7-2618fd0aebae"
+      Hint: Title
+      Value: Inicio
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\movin.tilakaratne@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\movin.tilakaratne@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "003876e5-acb0-45da-8042-190056640a87"
+    - ID: "9857f526-390f-48df-b6d1-1a97cc328e8f"
+      Hint: __Version Name
+      Value: AI translated
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\yuri.yampolsky@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260226T060859Z

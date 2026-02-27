@@ -106,21 +106,29 @@ It distinguishes between IAR (Item-As-Resources) modules and SCS (Sitecore Conte
 
 ### Common CLI Commands for Serialized Items
 
-Use the following Sitecore CLI commands to manage serialization and deployment:
+Use the out-of-the-box Sitecore CLI for serialization. Run all serialization commands from the **authoring** directory (where `sitecore.json` and the module config live).
 
 ```bash
-# Login with sitecore CLI
+# 1. Log in to Sitecore Cloud
 dotnet sitecore cloud login
 
-# Connect your local project to a specific SitecoreAI environment and allow write operations:
-dotnet sitecore cloud environment connect --environment-id <envId> --allow-write true
+# 2. Connect to your XM Cloud environment (use your environment-id and CM host)
+dotnet sitecore cloud environment connect \
+  --environment-id <envId> \
+  --cm-host <your-cm-host>.sitecorecloud.io \
+  --allow-write true
 
-# Pull the latest items from Sitecore to your local project
-sitecore ser pull
+# 3. Change to the authoring directory
+cd authoring
 
-# Push local serialized items to your Sitecore environment
-sitecore ser push
+# 4. Pull or push all serialized items (templates, layouts, content, media – everything)
+dotnet sitecore ser pull
+dotnet sitecore ser push
 ```
+
+Running without `--include` serializes **everything**: project settings, templates, layouts, renderings, placeholder settings, tenant and site roots, and all verticals’ content and media.
+
+Optional: to pull or push only one vertical’s Content and Media modules, add `--include` (e.g. `dotnet sitecore ser pull --include Project.Energy-Content --include Project.Energy-Media`).
 
 [Documentation](https://doc.sitecore.com/sai/en/developers/sitecoreai/serialization-in-sitecore.html)
 

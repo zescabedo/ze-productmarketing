@@ -1,0 +1,1 @@
+{"$schema":"../.sitecore/schemas/ModuleFile.schema.json","namespace":"Project.BaptistHealth-Media","references":["Project.IndustryVerticals"],"items":{"includes":[{"name":"baptist-health-medialibrary","path":"/sitecore/Media Library/Project/industry-verticals/baptist-health","scope":"DescendantsOnly","allowedPushOperations":"CreateUpdateAndDelete"}]}}
