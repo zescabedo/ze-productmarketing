@@ -44,10 +44,21 @@
       "type": "sxa",
       "buildCommand": "build",
       "runCommand": "next:start"
+    },
+    "baptist-health": {
+      "path": "./industry-verticals/baptist-health",
+      "nodeVersion": "22.11.0",
+      "jssDeploymentSecret": "110F1C44A496B45478640DD36F80C18C9",
+      "enabled": true,
+      "type": "sxa",
+      "buildCommand": "build",
+      "runCommand": "next:start"
     }
   },
   "deployItems": {
-    "modules": ["Project.IndustryVerticals"]
+    "modules": [
+      "Project.IndustryVerticals"
+    ]
   },
   "postActions": {
     "actions": {
@@ -62,7 +73,9 @@
           "Project.Travel-Media",
           "Project.Travel-Content",
           "Project.Energy-Media",
-          "Project.Energy-Content"
+          "Project.Energy-Content",
+          "Project.BaptistHealth-Content",
+          "Project.BaptistHealth-Media"
         ]
       },
       "warmUpCm": {

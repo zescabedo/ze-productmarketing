@@ -1,0 +1,63 @@
+﻿---
+ID: "85014fb2-d08e-4938-82c9-34adfa4c7838"
+Parent: "bec9372d-5f7b-496c-aa53-a17d573e65da"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Project/industry-verticals/baptist-health/imgi_7_Obtaining_Medical_Records-90x90"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/85014FB2D08E493882C934ADFA4C7838.ashx?h=16&thn=1&w=16"
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 75
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "d3b43544-892e-44a5-8d43-97499e2b6bb2"
+  Value: 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
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1689
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 75 x 90
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "c09f7304-6ec7-45b7-b2a3-9e7d6ba661f8"
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 90
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260226T184821Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "65885c44-8fcd-4a7f-94f1-ee63703fe193"
+      Hint: Alt
+      Value: "imgi_7_Obtaining_Medical_Records-90x90"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "80af0f9f-2f96-4e90-be8e-9a053d77a85c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260226T184822Z
