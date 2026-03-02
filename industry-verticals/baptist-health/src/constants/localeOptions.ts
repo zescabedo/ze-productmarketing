@@ -4,4 +4,5 @@ export const localeOptions: LocaleOption[] = [
   { code: 'en', label: 'EN | USD', currency: 'USD', currencySymbol: '$' },
   { code: 'fr-FR', label: 'FR | EUR', currency: 'EUR', currencySymbol: '€' },
   { code: 'es-ES', label: 'ES | EUR', currency: 'EUR', currencySymbol: '€' },
+  { code: 'es-PR', label: 'ES (PR) | USD', currency: 'USD', currencySymbol: '$' },
 ];
