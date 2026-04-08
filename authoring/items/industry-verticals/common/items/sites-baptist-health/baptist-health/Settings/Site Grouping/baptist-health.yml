@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "052491e7-1ad2-4572-9406-b2943860088f"
 Parent: "fe3b1515-0871-4960-be85-4a284beada4b"
 Template: "e46f3af2-39fa-4866-a157-7017c4b2a40c"
@@ -36,7 +36,7 @@ SharedFields:
   Value: "39f2a6c4-ef99-477b-9ec8-b72da60643ff"
 - ID: "f57099a3-526a-49f2-aebd-635453e48875"
   Hint: RenderingHost
-  Value: healthcare
+  Value: baptist-health
 Languages:
 - Language: en
   Versions:

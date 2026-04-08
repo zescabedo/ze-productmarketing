@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useMemo, useCallback } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import {
   Select,
   SelectContent,
@@ -22,28 +22,23 @@ export default function LanguageSwitcher(props: LanguageSwitcherProps) {
   const { styles, RenderingIdentifier: id } = props.params;
 
   const router = useRouter();
-  const { pathname, asPath, query } = router;
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   const { page } = useSitecore();
   const activeLocale = useMemo<string>(() => page?.locale as string, [page?.locale]);
 
   const changeLanguage = useCallback(
     (langCode: string) => {
-      if (pathname && asPath && query) {
-        router.push(
-          {
-            pathname,
-            query,
-          },
-          asPath,
-          {
-            locale: langCode,
-            shallow: false,
-          }
-        );
-      }
+      const segments = pathname.split('/').filter(Boolean);
+      if (segments.length < 2) return;
+      const siteName = segments[0];
+      const pathAfterLocale = segments.slice(2);
+      const nextPath = `/${siteName}/${langCode}${pathAfterLocale.length ? `/${pathAfterLocale.join('/')}` : ''}`;
+      const query = searchParams.toString();
+      router.push(`${nextPath}${query ? `?${query}` : ''}`);
     },
-    [asPath, pathname, query, router]
+    [pathname, router, searchParams]
   );
 
   const selectedLocale: string = localeOptions.some((l) => l.code === activeLocale)

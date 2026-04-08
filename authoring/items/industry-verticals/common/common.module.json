@@ -4,6 +4,36 @@
   "items": {
     "includes": [
       {
+        "name": "renderingHostHealthcare",
+        "path": "/sitecore/system/Settings/Services/Rendering Hosts/healthcare",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "renderingHostTravel",
+        "path": "/sitecore/system/Settings/Services/Rendering Hosts/travel",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "renderingHostEnergy",
+        "path": "/sitecore/system/Settings/Services/Rendering Hosts/energy",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "renderingHostLuxuryRetail",
+        "path": "/sitecore/system/Settings/Services/Rendering Hosts/luxury-retail",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "renderingHostBaptistHealth",
+        "path": "/sitecore/system/Settings/Services/Rendering Hosts/baptist-health",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
         "name": "module",
         "path": "/sitecore/system/settings/Project/industry-verticals",
         "allowedPushOperations": "CreateUpdateAndDelete"
