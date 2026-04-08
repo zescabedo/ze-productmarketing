@@ -1,3 +1,5 @@
+'use client';
+
 import { ArticleCard } from '@sitecore-search/ui';
 import Image from 'next/image';
 import { DEFAULT_IMG_URL } from '@/constants/search';

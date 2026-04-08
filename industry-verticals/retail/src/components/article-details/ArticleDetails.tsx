@@ -1,3 +1,5 @@
+'use client';
+
 import { isParamEnabled } from '@/helpers/isParamEnabled';
 import { ComponentProps } from '@/lib/component-props';
 import {

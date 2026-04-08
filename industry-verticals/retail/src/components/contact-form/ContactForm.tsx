@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import type { JSX } from 'react';
 import type { ComponentProps } from '@/lib/component-props';
 import { Text, type TextField } from '@sitecore-content-sdk/nextjs';
@@ -14,7 +14,7 @@ export type ContactFormProps = ComponentProps & {
 };
 
 export default function ContactForm(props: ContactFormProps): JSX.Element {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const { styles, RenderingIdentifier: id } = props.params;
 
   const FirstName = t('first_name') || 'First name';

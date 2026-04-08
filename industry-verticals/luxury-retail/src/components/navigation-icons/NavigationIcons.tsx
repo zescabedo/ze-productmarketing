@@ -1,8 +1,10 @@
+'use client';
+
 import React, { JSX } from 'react';
 import { User, Heart, ShoppingCart, X } from 'lucide-react';
 import { ComponentProps } from '@/lib/component-props';
 import { isParamEnabled } from '@/helpers/isParamEnabled';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 // import { MiniCart } from '../non-sitecore/MiniCart';
 import { LinkField } from '@sitecore-content-sdk/nextjs';
 import { Drawer, DrawerClose, DrawerContent, DrawerTrigger } from '@/shadcn/components/ui/drawer';
@@ -47,7 +49,7 @@ export const Default = (props: NavigationIconsProps): JSX.Element => {
   const showAccountIcon = !isParamEnabled(props.params.HideAccountIcon);
   const showCartIcon = !isParamEnabled(props.params.HideCartIcon);
 
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   return (
     <div className={`component navigation-icons ${props?.params?.styles?.trimEnd()}`} id={id}>

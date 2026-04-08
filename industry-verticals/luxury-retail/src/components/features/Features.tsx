@@ -1,3 +1,5 @@
+'use client';
+
 import { IGQLTextField } from '@/types/igql';
 import {
   ComponentParams,

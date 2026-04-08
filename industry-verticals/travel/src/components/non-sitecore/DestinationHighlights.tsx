@@ -1,13 +1,15 @@
+'use client';
+
 import { NextImage as Image, Text } from '@sitecore-content-sdk/nextjs';
 import { DestinationFields } from '@/types/destination';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 export const DestinationHighlights = ({
   highlights,
 }: {
   highlights: DestinationFields['Highlights'];
 }) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   return (
     <div>

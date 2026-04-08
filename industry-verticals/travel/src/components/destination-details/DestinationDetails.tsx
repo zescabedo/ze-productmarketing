@@ -1,3 +1,5 @@
+'use client';
+
 import { ComponentProps } from '@/lib/component-props';
 import { NextImage as Image, Text, RichText, useSitecore } from '@sitecore-content-sdk/nextjs';
 import Head from 'next/head';
@@ -9,7 +11,7 @@ import { DestinationHighlights } from '../non-sitecore/DestinationHighlights';
 import { DestinationSidebar } from '../non-sitecore/DestinationSidebar';
 import { ParentPathLink } from '../non-sitecore/ParentPathLink';
 import { DestinationLinkedContent } from '../non-sitecore/DestinationLinkedContent';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 interface DestinationDetailsProps extends ComponentProps {
   fields: DestinationFields;
@@ -20,7 +22,7 @@ export const Default = ({ params, fields }: DestinationDetailsProps) => {
   const [currentUrl, setCurrentUrl] = useState('');
   const { styles, RenderingIdentifier: id } = params;
   const isPageEditing = page.mode.isEditing;
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

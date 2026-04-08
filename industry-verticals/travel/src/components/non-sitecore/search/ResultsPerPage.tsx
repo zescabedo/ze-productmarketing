@@ -1,3 +1,5 @@
+'use client';
+
 import { useSearchResultsActions } from '@sitecore-search/react';
 import { Select, SortSelect } from '@sitecore-search/ui';
 

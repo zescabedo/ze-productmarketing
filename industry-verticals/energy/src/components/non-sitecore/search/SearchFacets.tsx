@@ -1,3 +1,5 @@
+'use client';
+
 import { CheckIcon } from '@radix-ui/react-icons';
 import type { SearchResponseFacet } from '@sitecore-search/react';
 import { useSearchResultsActions } from '@sitecore-search/react';

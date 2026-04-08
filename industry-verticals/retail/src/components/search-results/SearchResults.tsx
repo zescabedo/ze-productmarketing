@@ -1,3 +1,5 @@
+'use client';
+
 import React, { JSX } from 'react';
 import { ComponentProps } from 'lib/component-props';
 import { useSearchParams } from 'next/navigation';

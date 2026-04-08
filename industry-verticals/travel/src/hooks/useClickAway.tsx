@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect } from 'react';
 
 export const useClickAway = (ref: React.RefObject<HTMLElement | null>, onClickAway: () => void) => {

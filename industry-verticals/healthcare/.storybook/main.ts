@@ -17,7 +17,7 @@ const config: StorybookConfig = {
   framework: {
     name: '@storybook/nextjs',
     options: {
-      nextConfigPath: path.resolve(__dirname, '../next.config.js'),
+      nextConfigPath: path.resolve(__dirname, '../next.config.ts'),
     },
   },
   staticDirs: ['..\\public'],

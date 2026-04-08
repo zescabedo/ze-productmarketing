@@ -3,7 +3,7 @@ import { SitecoreProvider } from '@sitecore-content-sdk/nextjs';
 import { mockPageData } from './mockData/mockPageData';
 import { mockApiData } from './mockData/mockApiData';
 import mockComponentMap from './mockData/mockComponentMap';
-import { I18nProvider } from 'next-localization';
+import { NextIntlClientProvider } from 'next-intl';
 import { ThemeProvider } from 'next-themes';
 import { withThemeByClassName } from '@storybook/addon-themes';
 
@@ -38,9 +38,9 @@ const preview: Preview = {
     (Story) => (
       <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
         <SitecoreProvider componentMap={mockComponentMap} page={mockPageData} api={mockApiData}>
-          <I18nProvider locale="en" lngDict={{}}>
+          <NextIntlClientProvider locale="en" messages={{}}>
             <Story />
-          </I18nProvider>
+          </NextIntlClientProvider>
         </SitecoreProvider>
       </ThemeProvider>
     ),

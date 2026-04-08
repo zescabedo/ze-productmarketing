@@ -1,3 +1,5 @@
+'use client';
+
 import { Field, Text, useSitecore } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { ChevronLeft, ChevronRight } from 'lucide-react';

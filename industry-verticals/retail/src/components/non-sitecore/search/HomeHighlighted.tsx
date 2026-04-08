@@ -1,3 +1,5 @@
+'use client';
+
 import { JSX } from 'react';
 import { FilterEqual, WidgetDataType, useSearchResults, widget } from '@sitecore-search/react';
 import ArticleCard from './ArticleCard';

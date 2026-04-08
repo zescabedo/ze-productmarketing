@@ -1,7 +1,9 @@
+'use client';
+
 import React, { JSX } from 'react';
 import { ComponentProps } from '@/lib/component-props';
 import { Text, Field, RichText, RichTextField } from '@sitecore-content-sdk/nextjs';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 export type SubscribeBannerProps = ComponentProps & {
   params: { [key: string]: string };
@@ -13,7 +15,7 @@ export type SubscribeBannerProps = ComponentProps & {
 
 export const Default = (props: SubscribeBannerProps): JSX.Element => {
   const { styles, RenderingIdentifier: id } = props.params;
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   return (
     <section
@@ -62,7 +64,7 @@ export const Default = (props: SubscribeBannerProps): JSX.Element => {
 export const WithConsent = (props: SubscribeBannerProps): JSX.Element => {
   const { styles, RenderingIdentifier: id } = props.params;
   const uid = props.rendering.uid;
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   return (
     <section className={`component subscribe-banner group ${styles ?? ''}`} id={id || undefined}>

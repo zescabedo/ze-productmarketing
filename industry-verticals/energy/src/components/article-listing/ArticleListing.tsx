@@ -1,10 +1,12 @@
+'use client';
+
 import { getArticlesCountsByCategory } from '@/helpers/articleHelpers';
 import { ComponentProps } from '@/lib/component-props';
 import InfiniteScroll from '@/shadcn/components/ui/infiniteScroll';
 import { ArticleFields } from '@/types/article';
 import { NextImage as ContentSdkImage } from '@sitecore-content-sdk/nextjs';
 import { Loader2 } from 'lucide-react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import ArticleCard from '../non-sitecore/ArticleCard';
 
@@ -20,7 +22,7 @@ interface ArticleListingProps extends ComponentProps {
 }
 
 export const Default = (props: ArticleListingProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const id = props.params.RenderingIdentifier;
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 

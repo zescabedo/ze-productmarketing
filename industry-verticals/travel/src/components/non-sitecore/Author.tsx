@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import {
   Text,
@@ -11,7 +13,7 @@ import {
   ComponentRendering,
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 type AuthorProps = ComponentProps & {
   rendering: ComponentRendering<ComponentFields>;
@@ -24,7 +26,7 @@ type AuthorProps = ComponentProps & {
 };
 
 export const Author = (props: AuthorProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   return (
     <div className="border-border bg-background container mx-auto rounded-xl border px-4 py-8 shadow-sm">

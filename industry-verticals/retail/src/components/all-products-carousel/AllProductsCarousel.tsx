@@ -1,10 +1,12 @@
+'use client';
+
 import { ComponentProps } from '@/lib/component-props';
 import { useMemo, useState } from 'react';
 import { CategoryFields, Product } from '@/types/products';
 import ProductCarousel from '../non-sitecore/ProductCarousel';
 import { isParamEnabled } from '@/helpers/isParamEnabled';
 import { SitecoreItem } from '@/types/common';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 interface ProductCarouselProps extends ComponentProps {
   fields: {
@@ -13,7 +15,7 @@ interface ProductCarouselProps extends ComponentProps {
 }
 
 export const Default = ({ params, fields }: ProductCarouselProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const id = params.RenderingIdentifier;
   const { items } = fields;
   const allProductsCategory = t('all_products_category') || 'All';

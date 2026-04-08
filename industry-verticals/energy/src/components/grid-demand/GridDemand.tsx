@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import {
   Text as ContentSdkText,
@@ -8,7 +10,7 @@ import {
   TextField,
 } from '@sitecore-content-sdk/nextjs';
 
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { filterStyle, generateChartData } from '@/helpers/chartDataHelper';
 import { Chart } from '../non-sitecore/Chart';
 import { GRID_SUPPLY_DEMAND_CHART_DATA, GRID_SYSTEMWIDE_DATA } from './gridChartData';
@@ -36,7 +38,7 @@ type GridChartProps = GridDemandProps & {
 const GridChart = (props: GridChartProps) => {
   const { unit, var_one, var_two, dataset, chartType } = props;
   const { styles, id, UseDynamicallyGeneratedData } = props.params;
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   const useDataGeneration = isParamEnabled(UseDynamicallyGeneratedData);
   const lineType = filterStyle(props.params.Styles);
@@ -77,7 +79,7 @@ const GridChart = (props: GridChartProps) => {
 };
 
 export const Default = (props: GridDemandProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   const unit = t('system_demand_unit') || 'MW';
   const var_one = t('system_demand_variable_one') || 'CurrentForecast';
@@ -96,7 +98,7 @@ export const Default = (props: GridDemandProps) => {
 };
 
 export const Area = (props: GridDemandProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   const unit = t('supply_demand_unit') || 'MW';
   const var_one = t('supply_demand_variable_one') || 'CommitedCapacity';

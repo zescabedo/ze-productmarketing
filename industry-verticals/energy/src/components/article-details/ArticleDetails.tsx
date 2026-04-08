@@ -1,3 +1,5 @@
+'use client';
+
 import { ComponentProps } from '@/lib/component-props';
 import {
   NextImage as ContentSdkImage,
@@ -9,7 +11,7 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 import { Bookmark, Calendar, User } from 'lucide-react';
 import { ParentPathLink } from '../non-sitecore/ParentPathLink';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { useEffect, useState } from 'react';
 import SocialShare from '../non-sitecore/SocialShare';
 import { newsDateFormatter } from '@/helpers/dateHelper';
@@ -25,7 +27,7 @@ export const Default = ({ params, fields, rendering }: ArticleDetailsProps) => {
   const { styles, RenderingIdentifier: id, DynamicPlaceholderId } = params;
   const fullWidthPlaceholderKey = `article-details-full-width-${DynamicPlaceholderId}`;
   const isPageEditing = page.mode.isEditing;
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

@@ -1,3 +1,5 @@
+'use client';
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,7 +15,7 @@ import {
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Share2 } from 'lucide-react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import {
   EmailIcon,
   EmailShareButton,
@@ -52,7 +54,7 @@ const SocialShare = ({
   platforms = ['facebook', 'twitter', 'linkedin', 'pinterest', 'email'],
   useCustomIcons = false,
 }: SocialShareProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const iconClass = `size-7 md:size-8 ${useCustomIcons ? '' : 'rounded-sm'} ${iconClassName || ''}`;
 
   const renderSocialButton = (platform: SocialPlatform) => {

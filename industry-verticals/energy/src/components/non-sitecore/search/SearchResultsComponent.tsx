@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { GridIcon, ListBulletIcon } from '@radix-ui/react-icons';
 import type { SearchResultsInitialState, SearchResultsStoreState } from '@sitecore-search/react';

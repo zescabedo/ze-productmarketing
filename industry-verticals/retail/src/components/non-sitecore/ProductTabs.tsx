@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { Product } from '@/types/products';
 import {
   Text as ContentSdkText,
@@ -16,7 +18,7 @@ interface ProductTabsProps {
 }
 
 export const ProductTabs = ({ product, isPageEditing, rendering }: ProductTabsProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const [activeTab, setActiveTab] = useState<'description' | 'dimension' | 'reviews'>(
     'description'
   );

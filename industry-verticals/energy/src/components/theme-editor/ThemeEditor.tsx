@@ -1,3 +1,5 @@
+'use client';
+
 import React, { JSX, useMemo } from 'react';
 import Head from 'next/head';
 import { Field } from '@sitecore-content-sdk/nextjs';

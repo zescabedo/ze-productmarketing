@@ -4,7 +4,7 @@ import { ComponentProps } from '@/lib/component-props';
 import { Field, NextImage as ContentSdkImage, Text } from '@sitecore-content-sdk/nextjs';
 import { Destination } from '@/types/destination';
 import Link from 'next/link';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { ArrowRight } from 'lucide-react';
 import { LayoutStyles } from '@/types/styleFlags';
 
@@ -19,7 +19,7 @@ export type SelectedDestinationsProps = ComponentProps & {
 };
 
 export const Default = (props: SelectedDestinationsProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const id = props.params.RenderingIdentifier;
   const destinations = props.fields?.Destinations || [];
   const hasJustifyAround = props?.params?.styles?.includes(LayoutStyles.JustyfyAround);

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import {
   ImageField,
   NextImage as ContentSdkImage,
@@ -21,7 +21,7 @@ interface HeroBannerProps extends ComponentProps {
 
 export const DefaultHeroBanner = (props: HeroBannerProps) => {
   const id = props.params.RenderingIdentifier;
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   return (
     <section className={`relative pb-12 ${props?.params?.styles}`} id={id || undefined}>

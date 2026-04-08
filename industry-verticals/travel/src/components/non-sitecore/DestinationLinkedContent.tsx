@@ -1,11 +1,13 @@
+'use client';
+
 import { RichText, Text, NextImage as Image } from '@sitecore-content-sdk/nextjs';
 import { DestinationFields } from '@/types/destination';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/shadcn/components/ui/tabs';
 import { Bed, Camera, Navigation } from 'lucide-react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 export const DestinationLinkedContent = ({ destination }: { destination: DestinationFields }) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   return (
     <Tabs defaultValue="activities">
       <TabsList className="w-full">

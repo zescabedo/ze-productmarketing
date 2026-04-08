@@ -1,6 +1,8 @@
+'use client';
+
 import React, { JSX } from 'react';
 import { ComponentProps } from 'lib/component-props';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { Activity, Thermometer, TrendingDown, TrendingUp, Unplug, Zap } from 'lucide-react';
 import { Progress } from '@/shadcn/components/ui/progress';
 import { GRID_CONDITIONS_DATA } from './gridData';
@@ -40,7 +42,7 @@ export const Default = (props: GridConditionsProps): JSX.Element => {
 };
 
 const SectionGrid = () => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   const operatingCapacity =
     (GRID_CONDITIONS_DATA.grid.load.value / GRID_CONDITIONS_DATA.grid.capacity.value) * 100;
@@ -127,7 +129,7 @@ const SectionGrid = () => {
 };
 
 const SectionTemperature = () => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   return (
     <div className="info-card">
@@ -162,7 +164,7 @@ const SectionTemperature = () => {
 };
 
 const SectionOutages = () => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   return (
     <div className="info-card">

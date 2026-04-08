@@ -1,3 +1,5 @@
+'use client';
+
 import { ImageField, NextImage as ContentSdkImage } from '@sitecore-content-sdk/nextjs';
 import { useMemo, useRef, useState, useEffect } from 'react';
 import { Product } from '@/types/products';

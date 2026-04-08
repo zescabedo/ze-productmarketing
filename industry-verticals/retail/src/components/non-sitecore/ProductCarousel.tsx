@@ -1,3 +1,5 @@
+'use client';
+
 import { useId } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { A11y, Autoplay, Keyboard, Navigation } from 'swiper/modules';

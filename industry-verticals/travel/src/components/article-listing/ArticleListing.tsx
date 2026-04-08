@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useMemo } from 'react';
 import {
   Field,
@@ -12,7 +14,7 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from '@/lib/component-props';
 import Link from 'next/link';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { Author, Category, Tag } from '@/types/article';
 import { newsDateFormatter } from '@/helpers/dateHelper';
 import { Calendar, Clock, Heart, Share2, User } from 'lucide-react';
@@ -44,7 +46,7 @@ interface ArticleListingProps extends ComponentProps {
 const ITEMS_PER_PAGE = 6;
 
 export const Default = (props: ArticleListingProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const { page } = useSitecore();
   const isPageEditing = page.mode.isEditing;
   const id = props.params.RenderingIdentifier;

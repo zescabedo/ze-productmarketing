@@ -1,3 +1,5 @@
+'use client';
+
 import React, { JSX, HTMLAttributes, useId } from 'react';
 import {
   NextImage as ContentSdkImage,

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { CalendarDays, Clock, MapPin, Star, Thermometer } from 'lucide-react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import Image from 'next/image';
 import { DestinationSearchResult } from '@/types/destination';
 
@@ -11,7 +11,7 @@ interface DestinationCardProps {
 }
 
 export default function DestinationCard({ destination }: DestinationCardProps) {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const {
     image_url: image,
     review_rating: rating,

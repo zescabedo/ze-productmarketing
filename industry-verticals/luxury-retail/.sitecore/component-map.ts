@@ -1,6 +1,6 @@
 // Below are built-in components that are available in the app, it's recommended to keep them as is
 
-import { BYOCWrapper, NextjsContentSdkComponent, FEaaSWrapper } from '@sitecore-content-sdk/nextjs';
+import { BYOCServerWrapper, NextjsContentSdkComponent, FEaaSServerWrapper } from '@sitecore-content-sdk/nextjs';
 import { Form } from '@sitecore-content-sdk/nextjs';
 
 // end of built-in components
@@ -33,33 +33,33 @@ import * as Container from 'src/components/container/Container';
 import * as ColumnSplitter from 'src/components/column-splitter/ColumnSplitter';
 
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
-  ['BYOCWrapper', BYOCWrapper],
-  ['FEaaSWrapper', FEaaSWrapper],
-  ['Form', Form],
-  ['Title', { ...Title }],
-  ['ThemeEditor', { ...ThemeEditor }],
+  ['BYOCWrapper', BYOCServerWrapper],
+  ['FEaaSWrapper', FEaaSServerWrapper],
+  ['Form', { ...Form, componentType: 'client' }],
+  ['Title', { ...Title, componentType: 'client' }],
+  ['ThemeEditor', { ...ThemeEditor, componentType: 'client' }],
   ['SocialFollow', { ...SocialFollow }],
-  ['SocialFeed', { ...SocialFeed }],
-  ['SelectedProducts', { ...SelectedProducts }],
+  ['SocialFeed', { ...SocialFeed, componentType: 'client' }],
+  ['SelectedProducts', { ...SelectedProducts, componentType: 'client' }],
   ['SectionWrapper', { ...SectionWrapper }],
   ['RowSplitter', { ...RowSplitter }],
   ['RichText', { ...RichText }],
-  ['Promo', { ...Promo }],
-  ['ProductListing', { ...ProductListing }],
-  ['ProductDetails', { ...ProductDetails }],
+  ['Promo', { ...Promo, componentType: 'client' }],
+  ['ProductListing', { ...ProductListing, componentType: 'client' }],
+  ['ProductDetails', { ...ProductDetails, componentType: 'client' }],
   ['PartialDesignDynamicPlaceholder', { ...PartialDesignDynamicPlaceholder }],
-  ['PageHeader', { ...PageHeader }],
-  ['PageContent', { ...PageContent }],
-  ['Offers', { ...Offers }],
-  ['NavigationIcons', { ...NavigationIcons }],
+  ['PageHeader', { ...PageHeader, componentType: 'client' }],
+  ['PageContent', { ...PageContent, componentType: 'client' }],
+  ['Offers', { ...Offers, componentType: 'client' }],
+  ['NavigationIcons', { ...NavigationIcons, componentType: 'client' }],
   ['Navigation', { ...Navigation, componentType: 'client' }],
   ['LinkList', { ...LinkList }],
   ['LanguageSwitcher', { ...LanguageSwitcher, componentType: 'client' }],
-  ['Image', { ...Image }],
-  ['HeroBanner', { ...HeroBanner }],
+  ['Image', { ...Image, componentType: 'client' }],
+  ['HeroBanner', { ...HeroBanner, componentType: 'client' }],
   ['Header', { ...Header, componentType: 'client' }],
   ['Footer', { ...Footer }],
-  ['Features', { ...Features }],
+  ['Features', { ...Features, componentType: 'client' }],
   ['ContentBlock', { ...ContentBlock }],
   ['Container', { ...Container }],
   ['ColumnSplitter', { ...ColumnSplitter }],

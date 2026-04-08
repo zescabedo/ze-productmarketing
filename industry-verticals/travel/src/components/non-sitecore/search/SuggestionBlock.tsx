@@ -1,3 +1,5 @@
+'use client';
+
 import { useRouter } from 'next/navigation';
 import { usePreviewSearchActions } from '@sitecore-search/react';
 import { PreviewSearch } from '@sitecore-search/ui';

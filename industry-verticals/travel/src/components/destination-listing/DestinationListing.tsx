@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect } from 'react';
 import { Destination, DestinationSearchResult } from '@/types/destination';
 import DestinationCard from '../non-sitecore/DestinationCard';
 import { ComponentProps } from '@/lib/component-props';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import {
   useSearchResults,
   widget,
@@ -34,7 +34,7 @@ const SEARCH_CONFIG = {
 };
 
 const DestinationListingInner = (props: DestinationListingProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const hideTitleSection = props.params?.styles?.includes(TitleSectionFlags.HideTitleSection);
   const showGradientBackground = props.params?.styles?.includes(
     HeroBannerStyles.ShowGradientOverlay

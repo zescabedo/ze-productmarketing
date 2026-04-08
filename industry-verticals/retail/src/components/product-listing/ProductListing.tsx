@@ -1,6 +1,8 @@
+'use client';
+
 import { usePagination } from '@/hooks/usePagination';
 import { ComponentProps } from '@/lib/component-props';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { useState } from 'react';
 import { ProductCard } from '@/components/non-sitecore/ProductCard';
 import { Pagination } from '../non-sitecore/Pagination';
@@ -30,7 +32,7 @@ interface ProductListingProps extends ComponentProps {
 }
 
 export const Default = (props: ProductListingProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const id = props.params.RenderingIdentifier;
   const items = props.fields.data.contextItem.children.results;
 

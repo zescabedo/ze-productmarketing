@@ -1,10 +1,12 @@
+'use client';
+
 import { Text } from '@sitecore-content-sdk/nextjs';
 import { DestinationFields } from '@/types/destination';
 import { Phone, Plane } from 'lucide-react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 export const DestinationSidebar = ({ destination }: { destination: DestinationFields }) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   return (
     <div className="relative space-y-8">

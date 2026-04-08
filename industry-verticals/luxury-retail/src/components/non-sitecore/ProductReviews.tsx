@@ -1,15 +1,17 @@
+'use client';
+
 import React from 'react';
 import { Text } from '@sitecore-content-sdk/nextjs';
 import { ReviewFields } from '@/types/review';
 import StarRating from './StarRating';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 type ProductReviewsProps = {
   reviews: ReviewFields[];
 };
 
 export const ProductReviews = (props: ProductReviewsProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   if (!props.reviews || props.reviews.length === 0) {
     return (

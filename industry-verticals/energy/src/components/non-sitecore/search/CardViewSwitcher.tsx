@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 import { CardViewSwitcher } from '@sitecore-search/ui';

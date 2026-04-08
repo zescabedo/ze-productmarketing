@@ -1,3 +1,5 @@
+'use client';
+
 import { ComponentProps } from '@/lib/component-props';
 import {
   Field,
@@ -15,7 +17,7 @@ import { Calendar, Clock, Heart, Share2 } from 'lucide-react';
 import { newsDateFormatter } from '../../helpers/dateHelper';
 import { Author } from '../non-sitecore/Author';
 import { ParentPathLink } from '../non-sitecore/ParentPathLink';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import SocialShare from '../non-sitecore/SocialShare';
 import { useEffect, useState } from 'react';
 
@@ -57,7 +59,7 @@ export const Default = ({ params, fields, rendering }: ArticleDetailsProps) => {
   const placeholderAuthorKey = `article-details-author-${DynamicPlaceholderId}`;
   const fullWidthPlaceholderKey = `article-details-full-width-${DynamicPlaceholderId}`;
   const isPageEditing = page.mode.isEditing;
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   useEffect(() => {
     if (typeof window !== 'undefined') {

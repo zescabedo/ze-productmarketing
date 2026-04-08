@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -5,7 +7,7 @@ import CarouselButton from './CarouselButton';
 import { ReviewFields } from '@/types/review';
 import { ComponentRendering, useSitecore } from '@sitecore-content-sdk/nextjs';
 import ReviewCard from './ReviewCard';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 type ProductReviewsProps = {
   reviews: ReviewFields[];
@@ -14,7 +16,7 @@ type ProductReviewsProps = {
 
 export const ProductReviews = (props: ProductReviewsProps) => {
   const { page } = useSitecore();
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   const uid = props.rendering.uid;
   const isPageEditing = page.mode.isEditing;

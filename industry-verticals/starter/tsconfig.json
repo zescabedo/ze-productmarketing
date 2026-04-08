@@ -6,9 +6,10 @@
       "components/*": ["src/components/*"],
       "lib/*": ["src/lib/*"],
       "temp/*": ["src/temp/*"],
-      "assets/*": ["src/assets/*"]
+      "assets/*": ["src/assets/*"],
+      ".sitecore/*": [".sitecore/*"]
     },
-    "target": "es5",
+    "target": "ES2017",
     "types": ["node"],
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -30,8 +31,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "incremental": true,
-    "forceConsistentCasingInFileNames": false
+    "forceConsistentCasingInFileNames": false,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }

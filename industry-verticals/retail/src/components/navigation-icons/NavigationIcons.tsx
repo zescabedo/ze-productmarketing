@@ -1,8 +1,10 @@
+'use client';
+
 import React, { JSX, useState, useEffect } from 'react';
 import { User, Heart, ShoppingCart, X, Search } from 'lucide-react';
 import { ComponentProps } from '@/lib/component-props';
 import { isParamEnabled } from '@/helpers/isParamEnabled';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { Popover, PopoverContent, PopoverTrigger } from '@/shadcn/components/ui/popover';
 import { PopoverClose } from '@radix-ui/react-popover';
@@ -53,7 +55,7 @@ export const Default = (props: NavigationIconsProps): JSX.Element => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   // Close search when route changes
   useEffect(() => {

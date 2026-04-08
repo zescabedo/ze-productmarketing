@@ -1,10 +1,12 @@
+'use client';
+
 import * as React from 'react';
 import { Loader2 } from 'lucide-react';
 import InfiniteScroll from '@/shadcn/components/ui/infiniteScroll';
 import { ComponentProps } from '@/lib/component-props';
 import { ProductCard } from '@/components/non-sitecore/ProductCard';
 import { Category, Product, ProductIGQL } from '@/types/products';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 interface ProductCategoryPage {
   id: string;
@@ -31,7 +33,7 @@ export const Default = (props: ProductListingProps) => {
   const id = props.params.RenderingIdentifier;
   const items = props.fields.data.contextItem.children.results;
 
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   const unformattedProducts = items
     .filter((item) => Object.keys(item).length !== 0)

@@ -1,9 +1,11 @@
+'use client';
+
 import { Placeholder, useSitecore } from '@sitecore-content-sdk/nextjs';
 import { useEffect, useState } from 'react';
 import { ComponentProps } from '@/lib/component-props';
 import { Heart, Plus } from 'lucide-react';
 import { isParamEnabled } from '@/helpers/isParamEnabled';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { Product } from '@/types/products';
 import { ProductTabs } from '../non-sitecore/ProductTabs';
 import QuantityControl from '../non-sitecore/QuantityControl';
@@ -21,7 +23,7 @@ interface ProductDetailsProps extends ComponentProps {
 
 export const Default = (props: ProductDetailsProps) => {
   const { page } = useSitecore();
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   const id = props?.params?.RenderingIdentifier;
   const styles = `${props?.params?.styles || ''}`.trim();

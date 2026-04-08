@@ -1,3 +1,5 @@
+'use client';
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -5,7 +7,7 @@ import {
   DropdownMenuTrigger,
 } from '@/shadcn/components/ui/dropdown-menu';
 import { Share2 } from 'lucide-react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import {
   EmailIcon,
   EmailShareButton,
@@ -42,7 +44,7 @@ const SocialShare = ({
   iconClassName = '',
   platforms = ['facebook', 'twitter', 'linkedin', 'pinterest', 'email'],
 }: SocialShareProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const iconClass = `size-7 md:size-8 rounded-sm ${iconClassName || ''}`;
 
   const renderSocialButton = (platform: SocialPlatform) => {

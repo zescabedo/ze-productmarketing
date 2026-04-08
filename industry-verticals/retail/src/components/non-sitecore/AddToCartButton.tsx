@@ -1,7 +1,9 @@
+'use client';
+
 import { Check, Loader2, X } from 'lucide-react';
 import { useCartAction } from '@/hooks/useCartAction';
 import { Color, Product, Size } from '@/types/products';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 interface AddToCartButtonProps {
   productId: string;
@@ -19,7 +21,7 @@ export const AddToCartButton = ({
   selectedSize,
 }: AddToCartButtonProps) => {
   const { status, handleAddToCart } = useCartAction();
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   return (
     <button

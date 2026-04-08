@@ -1,5 +1,7 @@
+'use client';
+
 import { ComponentParams, ComponentRendering } from '@sitecore-content-sdk/nextjs';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import React from 'react';
 
 type GridStatusGaugeProps = {
@@ -8,7 +10,7 @@ type GridStatusGaugeProps = {
 };
 
 export const Default = (props: GridStatusGaugeProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const { styles, id } = props.params;
   const bars = 10;
 

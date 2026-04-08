@@ -1,5 +1,7 @@
+'use client';
+
 import { Text as ContentSdkText, useSitecore } from '@sitecore-content-sdk/nextjs';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { Product } from '@/types/products';
 
 interface ProductMetaDetalsProps {
@@ -8,7 +10,7 @@ interface ProductMetaDetalsProps {
 
 export const ProductMetaDetals = ({ product }: ProductMetaDetalsProps) => {
   const { page } = useSitecore();
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   const isPageEditing = page.mode.isEditing;
 

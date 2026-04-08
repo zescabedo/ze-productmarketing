@@ -1,3 +1,5 @@
+'use client';
+
 import { ComponentProps } from '@/lib/component-props';
 import {
   Field,
@@ -13,7 +15,7 @@ import { Article } from '@/types/article';
 import { newsDateFormatter } from '@/helpers/dateHelper';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 interface Fields {
   Title: Field<string>;
@@ -27,7 +29,7 @@ export type CarouselProps = ComponentProps & {
 };
 
 export const Default = (props: CarouselProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const id = props.params.RenderingIdentifier;
   const styles = props.params.styles || [];
   const articles = props.fields?.Articles || [];

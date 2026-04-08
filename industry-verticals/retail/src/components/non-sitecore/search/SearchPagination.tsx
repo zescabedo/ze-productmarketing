@@ -1,7 +1,9 @@
+'use client';
+
 import { useSearchResultsActions } from '@sitecore-search/react';
 import { Pagination } from '@sitecore-search/ui';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 type SearchPaginationProps = {
   currentPage: number;
@@ -10,7 +12,7 @@ type SearchPaginationProps = {
 
 const SearchPagination = ({ currentPage, totalPages }: SearchPaginationProps) => {
   const { onPageNumberChange } = useSearchResultsActions();
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   if (totalPages <= 1) return null;
 

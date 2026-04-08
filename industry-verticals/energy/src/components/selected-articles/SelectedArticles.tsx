@@ -1,3 +1,5 @@
+'use client';
+
 import { ComponentProps } from '@/lib/component-props';
 import {
   Field,
@@ -9,7 +11,7 @@ import {
 import { Article } from '@/types/article';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 interface Fields {
   Title: Field<string>;
@@ -22,7 +24,7 @@ export type SelectedArticlesProps = ComponentProps & {
 };
 
 export const Default = (props: SelectedArticlesProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const id = props.params.RenderingIdentifier;
   const styles = props.params.styles || [];
   const articles = props.fields?.Articles || [];

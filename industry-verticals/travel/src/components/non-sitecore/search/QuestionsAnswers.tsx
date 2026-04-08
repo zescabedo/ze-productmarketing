@@ -1,3 +1,5 @@
+'use client';
+
 import { Accordion, Content, Header, Item, Trigger } from '@radix-ui/react-accordion';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 import { WidgetDataType, useQuestions, widget } from '@sitecore-search/react';

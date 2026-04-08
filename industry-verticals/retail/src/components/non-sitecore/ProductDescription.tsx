@@ -1,3 +1,5 @@
+'use client';
+
 import { Text as ContentSdkText, useSitecore } from '@sitecore-content-sdk/nextjs';
 import { Product } from '@/types/products';
 import StarRating from '../non-sitecore/StarRating';

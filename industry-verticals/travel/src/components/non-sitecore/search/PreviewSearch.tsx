@@ -1,3 +1,5 @@
+'use client';
+
 import type { ChangeEvent, SyntheticEvent } from 'react';
 import { useCallback, useRef, useState, useEffect } from 'react';
 import type { PreviewSearchInitialState } from '@sitecore-search/react';

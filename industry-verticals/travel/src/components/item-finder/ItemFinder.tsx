@@ -3,7 +3,7 @@
 import React, { useState, useMemo, JSX } from 'react';
 import { Field, useSitecore } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from '@/lib/component-props';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { Search, MapPin, Users, Plane, ChevronDown, Check } from 'lucide-react';
 import {
   DropdownMenu,
@@ -25,7 +25,7 @@ interface ItemFinderProps extends ComponentProps {
 // Simple variant - Simple search bar
 export const Default = ({ params, fields }: ItemFinderProps): JSX.Element => {
   const { page } = useSitecore();
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const { styles, RenderingIdentifier: id } = params;
   const isPageEditing = page.mode.isEditing;
   const [searchQuery, setSearchQuery] = useState('');
@@ -71,7 +71,7 @@ export const Default = ({ params, fields }: ItemFinderProps): JSX.Element => {
 export const Medium = ({ params, fields }: ItemFinderProps): JSX.Element => {
   const { page } = useSitecore();
   const { styles, RenderingIdentifier: id } = params;
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const isPageEditing = page.mode.isEditing;
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedContinent, setSelectedContinent] = useState<string>('');
@@ -236,7 +236,7 @@ export const Medium = ({ params, fields }: ItemFinderProps): JSX.Element => {
 export const Large = ({ params, fields }: ItemFinderProps): JSX.Element => {
   const { page } = useSitecore();
   const { styles, RenderingIdentifier: id } = params;
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const isPageEditing = page.mode.isEditing;
   const [tripType, setTripType] = useState<'round-trip' | 'one-way' | 'multi-city'>('round-trip');
   const [from, setFrom] = useState('');

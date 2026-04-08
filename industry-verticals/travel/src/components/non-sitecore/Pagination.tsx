@@ -1,6 +1,8 @@
+'use client';
+
 import { usePagination } from '@/hooks/usePagination';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 interface PaginationProps {
   totalItems: number;
@@ -26,7 +28,7 @@ export const Pagination = ({
     windowSize,
   });
 
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   if (totalPages <= 1) return null;
   const handlePageChange = (page: number) => {
     setCurrentPage(page);

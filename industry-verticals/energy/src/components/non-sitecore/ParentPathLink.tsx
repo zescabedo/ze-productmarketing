@@ -3,11 +3,11 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ChevronLeft } from 'lucide-react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 
 export const ParentPathLink = ({ text }: { text: string }) => {
   const pathname = usePathname();
-  const { t } = useI18n();
+  const t = useSiteDictionary();
 
   // Split path into segments and remove the last one
   const segments = pathname?.split('/').filter(Boolean);

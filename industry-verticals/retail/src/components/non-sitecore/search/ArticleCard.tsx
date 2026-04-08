@@ -1,9 +1,11 @@
+'use client';
+
 import { ArticleCard } from '@sitecore-search/ui';
 import Link from 'next/link';
 import Image from 'next/image';
 import { DEFAULT_IMG_URL } from '@/constants/search';
 import { EntityModel } from '@sitecore-search/react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { ArrowRight } from 'lucide-react';
 
 type ArticleItemCardProps = {
@@ -14,7 +16,7 @@ type ArticleItemCardProps = {
 };
 
 const ArticleItemCard = ({ className = '', article }: ArticleItemCardProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const validImageUrl = article.image_url?.trim() ? article.image_url : DEFAULT_IMG_URL;
 
   return (

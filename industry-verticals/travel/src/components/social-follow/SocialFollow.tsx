@@ -1,7 +1,9 @@
+'use client';
+
 import React from 'react';
 import { LinkField, Link as ContentSdkLink, Field } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import {
   faFacebookF,
   faInstagram,
@@ -52,7 +54,7 @@ export const Default = (props: SocialFollowProps) => {
 };
 
 export const Share = (props: SocialFollowProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const id = props.params.RenderingIdentifier;
 
   const socialLinks = [
@@ -89,7 +91,7 @@ export const Share = (props: SocialFollowProps) => {
 };
 
 export const Follow = (props: SocialFollowProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const id = props.params.RenderingIdentifier;
 
   const socialLinks = [

@@ -1,5 +1,7 @@
+'use client';
+
 import { useEffect, useState } from 'react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { getCart, CartItem } from '@/lib/cart';
 import {
   NextImage as ContentSdkImage,
@@ -21,7 +23,7 @@ export const MiniCart = ({
   checkoutPage: LinkField;
 }) => {
   const [cart, setCart] = useState<CartItem[]>([]);
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const { currencySymbol } = useLocale();
   const { updatingItemId, handleRemoveFromCart, handleUpdateQuantity } = useCartAction();
 

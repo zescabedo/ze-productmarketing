@@ -3,7 +3,7 @@ import { SitecoreProvider } from '@sitecore-content-sdk/nextjs';
 import { mockPageData } from './mockData/mockPageData';
 import { mockApiData } from './mockData/mockApiData';
 import mockComponentMap from './mockData/mockComponentMap';
-import { I18nProvider } from 'next-localization';
+import { NextIntlClientProvider } from 'next-intl';
 
 import '../src/assets/main.css';
 
@@ -28,9 +28,9 @@ const preview: Preview = {
   decorators: [
     (Story) => (
       <SitecoreProvider componentMap={mockComponentMap} page={mockPageData} api={mockApiData}>
-        <I18nProvider locale="en" lngDict={{}}>
+        <NextIntlClientProvider locale="en" messages={{}}>
           <Story />
-        </I18nProvider>
+        </NextIntlClientProvider>
       </SitecoreProvider>
     ),
   ],

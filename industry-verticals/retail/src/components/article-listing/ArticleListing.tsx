@@ -1,3 +1,5 @@
+'use client';
+
 import {
   Field,
   ImageField,
@@ -14,7 +16,7 @@ import { faUser, faCalendar, faTag } from '@fortawesome/free-solid-svg-icons';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { ComponentProps } from '@/lib/component-props';
 import Link from 'next/link';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import { sortByDateDesc, getCategoryCounts } from '@/helpers/articleUtils';
 import { usePagination } from '@/hooks/usePagination';
 import { Pagination } from '../non-sitecore/Pagination';
@@ -43,7 +45,7 @@ interface ArticleListingProps extends ComponentProps {
 }
 
 export const Default = (props: ArticleListingProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const { page } = useSitecore();
   const id = props.params.RenderingIdentifier;
   const searchBarPlaceholderKey = `article-listing-search-bar-${props.params.DynamicPlaceholderId}`;

@@ -1,3 +1,5 @@
+'use client';
+
 import { newsDateFormatter } from '@/helpers/dateHelper';
 import { ArticleFields } from '@/types/article';
 import {
@@ -8,7 +10,7 @@ import {
   RichText as ContentSdkRichText,
 } from '@sitecore-content-sdk/nextjs';
 import { ArrowRight, Calendar, User } from 'lucide-react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import Link from 'next/link';
 
 interface ArticlesProps {
@@ -18,7 +20,7 @@ interface ArticlesProps {
 }
 
 const ArticleCard = ({ fields, id, url }: ArticlesProps) => {
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const { page } = useSitecore();
   const isPageEditing = page.mode.isEditing;
   return (

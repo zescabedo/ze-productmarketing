@@ -1,6 +1,6 @@
 // Below are built-in components that are available in the app, it's recommended to keep them as is
 
-import { BYOCWrapper, NextjsContentSdkComponent, FEaaSWrapper } from '@sitecore-content-sdk/nextjs';
+import { BYOCServerWrapper, NextjsContentSdkComponent, FEaaSServerWrapper } from '@sitecore-content-sdk/nextjs';
 import { Form } from '@sitecore-content-sdk/nextjs';
 
 // end of built-in components
@@ -35,8 +35,8 @@ import * as Image from 'src/components/image/Image';
 import * as HeroBanner from 'src/components/hero-banner/HeroBanner';
 import * as Header from 'src/components/header/Header';
 import * as GridStatusGauge from 'src/components/gridstatusgauge/GridStatusGauge';
-import * as GridDemand from 'src/components/grid-demand/GridDemand';
 import * as gridChartData from 'src/components/grid-demand/gridChartData';
+import * as GridDemand from 'src/components/grid-demand/GridDemand';
 import * as gridData from 'src/components/grid-conditions/gridData';
 import * as GridConditions from 'src/components/grid-conditions/GridConditions';
 import * as Footer from 'src/components/footer/Footer';
@@ -48,51 +48,51 @@ import * as ArticleListing from 'src/components/article-listing/ArticleListing';
 import * as ArticleDetails from 'src/components/article-details/ArticleDetails';
 
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
-  ['BYOCWrapper', BYOCWrapper],
-  ['FEaaSWrapper', FEaaSWrapper],
-  ['Form', Form],
-  ['Title', { ...Title }],
-  ['ThemeEditor', { ...ThemeEditor }],
+  ['BYOCWrapper', BYOCServerWrapper],
+  ['FEaaSWrapper', FEaaSServerWrapper],
+  ['Form', { ...Form, componentType: 'client' }],
+  ['Title', { ...Title, componentType: 'client' }],
+  ['ThemeEditor', { ...ThemeEditor, componentType: 'client' }],
   ['SocialFollow', { ...SocialFollow }],
-  ['SelectedArticles', { ...SelectedArticles }],
+  ['SelectedArticles', { ...SelectedArticles, componentType: 'client' }],
   ['SectionWrapper', { ...SectionWrapper }],
-  ['SearchResults', { ...SearchResults }],
+  ['SearchResults', { ...SearchResults, componentType: 'client' }],
   ['RowSplitter', { ...RowSplitter }],
   ['RichText', { ...RichText }],
   ['Promo', { ...Promo }],
   ['PartialDesignDynamicPlaceholder', { ...PartialDesignDynamicPlaceholder }],
-  ['PageContent', { ...PageContent }],
-  ['SuggestionBlock', { ...SuggestionBlock }],
+  ['PageContent', { ...PageContent, componentType: 'client' }],
+  ['SuggestionBlock', { ...SuggestionBlock, componentType: 'client' }],
   ['Spinner', { ...Spinner }],
-  ['SortOrder', { ...SortOrder }],
-  ['SearchResultsComponent', { ...SearchResultsComponent }],
-  ['SearchPagination', { ...SearchPagination }],
-  ['SearchFacets', { ...SearchFacets }],
-  ['ResultsPerPage', { ...ResultsPerPage }],
-  ['QuestionsAnswers', { ...QuestionsAnswers }],
+  ['SortOrder', { ...SortOrder, componentType: 'client' }],
+  ['SearchResultsComponent', { ...SearchResultsComponent, componentType: 'client' }],
+  ['SearchPagination', { ...SearchPagination, componentType: 'client' }],
+  ['SearchFacets', { ...SearchFacets, componentType: 'client' }],
+  ['ResultsPerPage', { ...ResultsPerPage, componentType: 'client' }],
+  ['QuestionsAnswers', { ...QuestionsAnswers, componentType: 'client' }],
   ['QueryResultsSummary', { ...QueryResultsSummary }],
-  ['PreviewSearch', { ...PreviewSearch }],
-  ['HomeHighlighted', { ...HomeHighlighted }],
-  ['CardViewSwitcher', { ...CardViewSwitcher }],
-  ['ArticleHorizontalCard', { ...ArticleHorizontalCard }],
-  ['ArticleCard', { ...ArticleCard }],
+  ['PreviewSearch', { ...PreviewSearch, componentType: 'client' }],
+  ['HomeHighlighted', { ...HomeHighlighted, componentType: 'client' }],
+  ['CardViewSwitcher', { ...CardViewSwitcher, componentType: 'client' }],
+  ['ArticleHorizontalCard', { ...ArticleHorizontalCard, componentType: 'client' }],
+  ['ArticleCard', { ...ArticleCard, componentType: 'client' }],
   ['Navigation', { ...Navigation, componentType: 'client' }],
   ['LinkList', { ...LinkList }],
-  ['Image', { ...Image }],
-  ['HeroBanner', { ...HeroBanner }],
+  ['Image', { ...Image, componentType: 'client' }],
+  ['HeroBanner', { ...HeroBanner, componentType: 'client' }],
   ['Header', { ...Header, componentType: 'client' }],
-  ['GridStatusGauge', { ...GridStatusGauge }],
-  ['GridDemand', { ...GridDemand }],
+  ['GridStatusGauge', { ...GridStatusGauge, componentType: 'client' }],
   ['gridChartData', { ...gridChartData }],
+  ['GridDemand', { ...GridDemand, componentType: 'client' }],
   ['gridData', { ...gridData }],
-  ['GridConditions', { ...GridConditions }],
+  ['GridConditions', { ...GridConditions, componentType: 'client' }],
   ['Footer', { ...Footer }],
   ['Features', { ...Features, componentType: 'client' }],
   ['ContentBlock', { ...ContentBlock }],
   ['Container', { ...Container }],
   ['ColumnSplitter', { ...ColumnSplitter }],
-  ['ArticleListing', { ...ArticleListing }],
-  ['ArticleDetails', { ...ArticleDetails }],
+  ['ArticleListing', { ...ArticleListing, componentType: 'client' }],
+  ['ArticleDetails', { ...ArticleDetails, componentType: 'client' }],
 ]);
 
 export default componentMap;

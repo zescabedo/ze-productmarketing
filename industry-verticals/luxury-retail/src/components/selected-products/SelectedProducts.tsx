@@ -1,3 +1,5 @@
+'use client';
+
 import React, { JSX, useId } from 'react';
 import { ComponentProps } from '@/lib/component-props';
 import { Text, Field, LinkField } from '@sitecore-content-sdk/nextjs';

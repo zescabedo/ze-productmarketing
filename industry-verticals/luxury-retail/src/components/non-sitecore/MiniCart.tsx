@@ -1,5 +1,7 @@
+'use client';
+
 import { useEffect, useState } from 'react';
-import { useI18n } from 'next-localization';
+import { useSiteDictionary } from '@/hooks/useSiteDictionary';
 import {
   NextImage as ContentSdkImage,
   Text as ContentSdkText,
@@ -14,7 +16,7 @@ import { DrawerClose } from '@/shadcn/components/ui/drawer';
 
 export const MiniCart = ({ checkoutPage }: { showWishlist?: boolean; checkoutPage: LinkField }) => {
   const [cart, setCart] = useState<CartItem[]>([]);
-  const { t } = useI18n();
+  const t = useSiteDictionary();
   const { currencySymbol } = useLocale();
   const { updatingItemId, handleRemoveFromCart, handleUpdateQuantity } = useCartAction();
 
