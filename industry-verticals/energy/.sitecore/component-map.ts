@@ -50,7 +50,7 @@ import * as ArticleDetails from 'src/components/article-details/ArticleDetails';
 export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['BYOCWrapper', BYOCServerWrapper],
   ['FEaaSWrapper', FEaaSServerWrapper],
-  ['Form', { ...Form, componentType: 'client' }],
+  ['Form', Form],
   ['Title', { ...Title, componentType: 'client' }],
   ['ThemeEditor', { ...ThemeEditor, componentType: 'client' }],
   ['SocialFollow', { ...SocialFollow }],

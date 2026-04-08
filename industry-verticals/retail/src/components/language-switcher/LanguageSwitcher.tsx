@@ -30,12 +30,13 @@ export default function LanguageSwitcher(props: LanguageSwitcherProps) {
 
   const changeLanguage = useCallback(
     (langCode: string) => {
+      if (pathname == null) return;
       const segments = pathname.split('/').filter(Boolean);
       if (segments.length < 2) return;
       const siteName = segments[0];
       const pathAfterLocale = segments.slice(2);
       const nextPath = `/${siteName}/${langCode}${pathAfterLocale.length ? `/${pathAfterLocale.join('/')}` : ''}`;
-      const query = searchParams.toString();
+      const query = searchParams?.toString() ?? '';
       router.push(`${nextPath}${query ? `?${query}` : ''}`);
     },
     [pathname, router, searchParams]
